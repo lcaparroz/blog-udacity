@@ -84,6 +84,10 @@ body {
     margin: 0;
 }
 
+.month-list-bar {
+    display: none;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
@@ -109,4 +113,75 @@ body {
 .footer #copyright {
     flex-grow: 1;
     text-align: right;
+}
+
+@media (min-width:600px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto 240px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "navbar navbar"
+        "main main"
+        "posts month-bar"
+        "footer footer";
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+        gap: 0;
+        padding: 0;
+        background-color: #dde2e7;
+    }
+
+    .nav-button {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    .blog-articles {
+        padding-right: 0px;
+    }
+
+    .month-list-bar {
+        grid-area: month-bar;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 3px 3px 7px #888;
+        margin: 15px;
+        padding: 15px 35px;
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    .month-list-bar .year-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .month-list-bar .month-list {
+        list-style-type: none;
+        padding: 0 0 0 15px;
+    }
+
+    .month-list-bar a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 840px) 240px 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "navbar navbar navbar navbar"
+        "main main main main"
+        ". posts month-bar ."
+        "footer footer footer footer";
+    }
 }
