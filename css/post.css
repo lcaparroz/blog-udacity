@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "post";
+    grid-template-areas:
+    "post"
+    "author";
     font-size: 1.1em;
 }
 
@@ -27,12 +29,59 @@
     padding: 0 1em;
 }
 
+#content-post .author {
+    grid-area: author;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #888;
+    max-width: 400px;
+    margin: 0 15px 30px 15px;
+}
+
+#content-post .portrait {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    overflow: clip;
+}
+
+#content-post .portrait > img {
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#content-post .bio {
+    display: block;
+    padding: 15px;
+}
+
+#content-post .bio > h4 {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+#content-post .bio > #title {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+#content-post .bio > #description {
+    text-indent: 2em;
+    text-align: justify;
+    margin: 15px 0 0 0;
+}
+
 @media (min-width:600px) {
     #content-post {
         display: grid;
         grid-template-columns: 5% 1fr 5%;
         grid-template-rows: auto;
-        grid-template-areas: ". post .";
+        grid-template-areas:
+        ". post ."
+        ". author .";
         font-size: 1.1em;
     }
 }
@@ -42,7 +91,9 @@
         display: grid;
         grid-template-columns: 1fr minmax(640px, 1080px) 1fr;
         grid-template-rows: auto;
-        grid-template-areas: ". post .";
+        grid-template-areas:
+        ". post ."
+        ". author .";
         font-size: 1.1em;
     }
 }
