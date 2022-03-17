@@ -49,9 +49,41 @@
     text-indent: 2em;
 }
 
-#blog-articles footer > p {
-    text-align: right;
+#blog-articles footer {
+    display: flex;
+    margin: 0 0 5px 0;
+    max-height: min-content;
+}
+
+#blog-articles footer > .author-date-section {
+    display: inline-block;
     margin: 0;
+    padding: 0;
+}
+
+#blog-articles .author-date-section > p {
+    margin: 0;
+}
+
+#blog-articles footer > .link-section {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: right;
+}
+
+#blog-articles .link-section > p {
+    margin: 0;
+}
+
+#blog-articles .link-section > p > a {
+    background-color: #5079be;
+    color: #eef1f4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888;
+    padding: 5px 15px;
+    text-decoration: none;
 }
 
 #month-list-bar {
