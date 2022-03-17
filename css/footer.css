@@ -1,0 +1,26 @@
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    background-color: #eef1f4;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer #copyright {
+    flex-grow: 1;
+    text-align: right;
+}
