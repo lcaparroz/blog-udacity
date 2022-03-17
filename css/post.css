@@ -91,6 +91,32 @@
     margin: 15px 0 0 0;
 }
 
+#post-nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+#post-nav li {
+    display: inline-block;
+    padding: 15px;
+}
+
+#post-nav a {
+    background-color: #dde2e7;
+    color: #4b505b;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#post-nav a:hover {
+    background-color: #3760a5;
+    color: #fafafa;
+}
+
 @media (min-width:600px) {
     #content-post {
         display: grid;

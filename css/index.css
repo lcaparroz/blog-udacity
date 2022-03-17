@@ -129,6 +129,7 @@
     }
 
     #month-list-bar a {
+        color: #3760a5;
         text-decoration: none;
     }
 }
