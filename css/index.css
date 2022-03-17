@@ -9,7 +9,7 @@
     grid-area: posts;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-self: center;
     gap: 15px;
     padding: 15px;
 }
@@ -17,11 +17,31 @@
 #blog-articles article {
     border-radius: 10px;
     box-shadow: 3px 3px 7px #888;
+}
+
+#blog-articles .article-image {
+    border-radius: 10px 10px 0 0;
+    overflow: clip;
+}
+
+#blog-articles .article-image > img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#blog-articles .article-body {
     padding: 15px;
 }
 
 #blog-articles h2 {
     margin: 0;
+}
+
+#blog-articles h2 > a {
+    margin: 0;
+    text-decoration: none;
+    color: #5079be;
 }
 
 #blog-articles p.description {
@@ -47,7 +67,7 @@
     }
 
     #blog-articles {
-        padding-right: 0;
+        padding: 15px 0 15px 15px;
     }
 
     #month-list-bar {
@@ -82,5 +102,15 @@
         grid-template-columns: 1fr minmax(auto, 840px) 240px 1fr;
         grid-template-rows: auto;
         grid-template-areas: ". posts month-bar .";
+    }
+
+    #blog-articles {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        padding: 15px 0;
+    }
+
+    #blog-articles article {
+        max-width: 48%;
     }
 }
