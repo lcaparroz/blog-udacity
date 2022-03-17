@@ -19,7 +19,6 @@
 
 #content-post section.introduction > p {
     text-align: center;
-    font-style: italic;
     padding: 1em;
 }
 
@@ -27,6 +26,24 @@
     text-indent: 2em;
     text-align: justify;
     padding: 0 1em;
+}
+
+#content-post blockquote {
+    padding: 15px;
+    background-color: #eef1f4;
+}
+
+#content-post figure {
+    padding: 15px;
+    background-color: #eef1f4;
+}
+
+#content-post img {
+    max-width: 100%;
+}
+
+#content-post figcaption {
+    text-align: center;
 }
 
 #content-post .author {
