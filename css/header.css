@@ -1,0 +1,34 @@
+.blog-header {
+    grid-area: header;
+    text-align: center;
+    background-color: #eef1f4;
+}
+
+.blog-header form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.blog-header form > input {
+    display: block;
+    margin: 0;
+}
+
+.blog-header form > input.button-ok {
+    margin: 5px;
+}
+
+@media (min-width:600px) {
+    .blog-header form {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .blog-header form > input {
+        display: inline;
+    }
+}

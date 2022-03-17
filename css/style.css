@@ -1,7 +1,9 @@
 @import './index.css';
 @import './post.css';
 @import './navbar.css';
+@import './header.css';
 @import './footer.css';
+@import './buttons.css';
 
 body {
     margin: 0;
@@ -19,12 +21,6 @@ body {
     "content"
     "navbar"
     "footer";
-}
-
-.blog-header {
-    grid-area: header;
-    text-align: center;
-    background-color: #eef1f4;
 }
 
 .content {

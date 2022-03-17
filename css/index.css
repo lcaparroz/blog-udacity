@@ -77,20 +77,6 @@
     margin: 0;
 }
 
-#blog-articles .link-section > p > a {
-    background-color: #3760a5;
-    color: #fafafa;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #888;
-    padding: 5px 15px;
-    text-decoration: none;
-    transition: .3s;
-}
-
-#blog-articles .link-section > p > a:hover {
-    opacity: 0.7;
-}
-
 #month-list-bar {
     display: none;
 }
