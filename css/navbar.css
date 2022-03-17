@@ -24,7 +24,6 @@
 .nav-button.active {
     background-color: #608e32;
     color: #eef1f4;
-    font-weight: 600;
 }
 
 .nav-button:hover {
